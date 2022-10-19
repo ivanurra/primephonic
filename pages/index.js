@@ -1,9 +1,10 @@
+import Sidebar from "../components/Sidebar";
+
 export default function Home() {
   return (
     <div>
-      <h1>Primephonic</h1>
       <main>
-        {/* Sidebar */}
+        <Sidebar />
         {/* Center */}
       </main>
       <div>{/* Player */}</div>
