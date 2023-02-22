@@ -1,7 +1,13 @@
+import { HomeIcon } from "@heroicons/react/outline";
+
 export default function Sidebar() {
   return (
     <div>
-      <h1>Sidebar</h1>
+      <div>
+        <button>
+          <HomeIcon className="h-5 w-5" />
+        </button>
+      </div>
     </div>
   );
 }
