@@ -2,7 +2,7 @@ import Sidebar from "../components/Sidebar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen overflow-hidden bg-blue-300">
       <main>
         <Sidebar />
         {/* Center */}
