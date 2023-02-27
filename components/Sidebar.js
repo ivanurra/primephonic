@@ -41,7 +41,17 @@ export default function Sidebar() {
         </button>
         <hr className="border-t-[0.1px] border-black" />
         {/* Playlists */}
-        <p className="cursor-pointer">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
+        <p className="cursor-pointer hover:text-white">Playlist Name</p>
       </div>
     </div>
   );
