@@ -11,7 +11,7 @@ export default function Sidebar() {
   return (
     <div className="p-5 text-sm border-r border-gray-300 text-black">
       <div>
-        <img src="logo.png" alt="Primephonic Logo" width="150px" />
+        <img src="/logo.png" alt="Primephonic Logo" width="150px" />
       </div>
       <div className="space-y-4 ml-2 mt-2">
         <button className="flex items-center space-x-2 hover:text-white">

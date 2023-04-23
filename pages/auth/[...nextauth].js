@@ -38,7 +38,7 @@ export const authOptions = {
   ],
   secret: process.env.JWT_SECRET,
   pages: {
-    signIn: "/login",
+    signIn: "/auth/login",
   },
   callbacks: {
     async jwt({ token, account, user }) {
@@ -62,6 +62,13 @@ export const authOptions = {
       // Access token has expired, we need to refresh it
       console.log("Access token has expired, refreshing");
       return await refreshAccessToken(token);
+    },
+    async session({ session, token }) {
+      session.user.accessToken = token.accessToken;
+      session.user.refreshToken = token.refreshToken;
+      session.user.username = token.username;
+
+      return session;
     },
   },
 };
