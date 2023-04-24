@@ -1,12 +1,20 @@
 import { getProviders, signIn } from "next-auth/react";
-
-export default function Login({ providers }) {
+ 
+function Login({ providers }) {
   return (
     <div>
-      <img src="/logo.png" alt="Primephonic Logo" width="350px" />
+      <img src="/logo.png" alt="Primephonic Logo" className="w-80 mb-5" />
+
+      {Object.values(providers).map((provider) => (
+        <div key={provider.name}>
+          <button>Login with {provider.name}</button>
+        </div>
+      ))}
     </div>
   );
 }
+
+export default Login;
 
 export async function getServerSideProps() {
   const providers = await getProviders();
