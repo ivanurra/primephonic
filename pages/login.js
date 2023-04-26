@@ -1,11 +1,11 @@
-import { getProviders, signIn } from "next-auth/react";
- 
+import { getProviders } from "next-auth/react";
+
 function Login({ providers }) {
   return (
     <div>
       <img src="/logo.png" alt="Primephonic Logo" className="w-80 mb-5" />
 
-      {Object.values(providers).map((provider) => (
+      {Object.values(providers || {}).map((provider) => (
         <div key={provider.name}>
           <button>Login with {provider.name}</button>
         </div>
